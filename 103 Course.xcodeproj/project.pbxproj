@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2AB4B15D2E5E9B170090C0E8 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B15C2E5E9B170090C0E8 /* ShoppingListView.swift */; };
+		2AB4B1792E61253D0090C0E8 /* Student Record in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B1782E61253D0090C0E8 /* Student Record */; };
+		2AB4B17B2E6125850090C0E8 /* Student record ass#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B17A2E6125850090C0E8 /* Student record ass#1.swift */; };
+		2AB4B1892E635B580090C0E8 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B1882E635B580090C0E8 /* Binding.swift */; };
+		2AB4B18D2E635DE80090C0E8 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B18C2E635DE80090C0E8 /* ObservableObject.swift */; };
+		2AB4B18F2E635E900090C0E8 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B18E2E635E900090C0E8 /* PostView.swift */; };
+		2AB4B1952E6378AD0090C0E8 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4B1942E6378AD0090C0E8 /* StudentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 		2AB4B12A2E5E99850090C0E8 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AB4B15B2E5E99E90090C0E8 /* 103 class 1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "103 class 1.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AB4B15C2E5E9B170090C0E8 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		2AB4B1782E61253D0090C0E8 /* Student Record */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Student Record"; sourceTree = "<group>"; };
+		2AB4B17A2E6125850090C0E8 /* Student record ass#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student record ass#1.swift"; sourceTree = "<group>"; };
+		2AB4B1882E635B580090C0E8 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		2AB4B18C2E635DE80090C0E8 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		2AB4B18E2E635E900090C0E8 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		2AB4B1942E6378AD0090C0E8 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +94,12 @@
 		2AAAE0B42E5E9843003EE101 = {
 			isa = PBXGroup;
 			children = (
+				2AB4B1942E6378AD0090C0E8 /* StudentModel.swift */,
+				2AB4B18E2E635E900090C0E8 /* PostView.swift */,
+				2AB4B18C2E635DE80090C0E8 /* ObservableObject.swift */,
+				2AB4B1882E635B580090C0E8 /* Binding.swift */,
+				2AB4B17A2E6125850090C0E8 /* Student record ass#1.swift */,
+				2AB4B1782E61253D0090C0E8 /* Student Record */,
 				2AB4B15C2E5E9B170090C0E8 /* ShoppingListView.swift */,
 				2AB4B15B2E5E99E90090C0E8 /* 103 class 1.playground */,
 				2AB4B12A2E5E99850090C0E8 /* Arrays.playground */,
@@ -246,7 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB4B17B2E6125850090C0E8 /* Student record ass#1.swift in Sources */,
+				2AB4B1952E6378AD0090C0E8 /* StudentModel.swift in Sources */,
+				2AB4B1892E635B580090C0E8 /* Binding.swift in Sources */,
+				2AB4B18F2E635E900090C0E8 /* PostView.swift in Sources */,
+				2AB4B1792E61253D0090C0E8 /* Student Record in Sources */,
 				2AB4B15D2E5E9B170090C0E8 /* ShoppingListView.swift in Sources */,
+				2AB4B18D2E635DE80090C0E8 /* ObservableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
