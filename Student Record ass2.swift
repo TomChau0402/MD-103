@@ -1,16 +1,15 @@
 //
-//  Student Record #1.swift
+//  Student Record ass2.swift
 //  103 Course
+//
 
 import SwiftUI
 
-struct StudentRecord: View {
+struct ContentView: View {
     @State private var students: [Student] = [
         Student(name: "Alice", grades: [85.0, 90.0, 78.0]),
         Student(name: "Bob", grades: [92.0, 88.0, 95.0]),
-        Student(name: "Charlie", grades: [76.0, 82.0, 79.0]),
-        Student(name: "Diana", grades: [95.0, 91.0, 89.0]),
-        Student(name: "Ethan", grades: [68.0, 72.0, 75.0])
+        
     ]
     
     @State private var sortAscending = true
@@ -85,6 +84,9 @@ struct StudentRecord: View {
         }
     }
 }
-#Preview {
-    StudentRecord()
+
+#Preview struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

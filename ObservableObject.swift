@@ -2,8 +2,6 @@
 //  ObservableObject.swift
 //  103 Course
 //
-//  Created by Amy Vu on 8/30/25.
-//
 
 import SwiftUI
 
