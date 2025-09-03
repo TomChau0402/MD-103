@@ -27,6 +27,7 @@ struct ToggleView: View {
     
     }
 }
+
 #Preview {
     SwitchView()
 }

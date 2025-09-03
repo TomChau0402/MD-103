@@ -64,6 +64,11 @@
 			path = "103 CourseUITests";
 			sourceTree = "<group>";
 		};
+		2AE2D2DE2E67C1C2005E7125 /* New Folder */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New Folder";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB4B1A42E64CE7B0090C0E8 /* Student Record ass2.swift */,
+				2AE2D2DE2E67C1C2005E7125 /* New Folder */,
 				2AB4B1942E6378AD0090C0E8 /* StudentModel.swift */,
 				2AB4B18E2E635E900090C0E8 /* PostView.swift */,
 				2AB4B18C2E635DE80090C0E8 /* ObservableObject.swift */,
@@ -137,6 +143,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2AAAE0BF2E5E9843003EE101 /* 103 Course */,
+				2AE2D2DE2E67C1C2005E7125 /* New Folder */,
 			);
 			name = "103 Course";
 			packageProductDependencies = (

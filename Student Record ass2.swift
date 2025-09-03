@@ -5,11 +5,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State private var students: [Student] = [
-        Student(name: "Alice", grades: [85.0, 90.0, 78.0]),
-        Student(name: "Bob", grades: [92.0, 88.0, 95.0]),
-        
+struct Content2View: View {
+    @State private var students: [StudentRecord] = [
+        StudentRecord(name: "Alice", grades: [85.0, 90.0, 78.0]),
+        StudentRecord(name: "Bob", grades: [92.0, 88.0, 95.0]),
     ]
     
     @State private var sortAscending = true
@@ -21,7 +20,7 @@ struct ContentView: View {
         return total / Double(students.count)
     }
     
-    var sortedStudents: [Student] {
+    var sortedStudents: [StudentRecord] {
         students.sorted {
             sortAscending ? $0.averageGrade < $1.averageGrade : $0.averageGrade > $1.averageGrade
         }
@@ -40,6 +39,10 @@ struct ContentView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .background(Color.blue)
+                
+                Button("Add student") {
+                    showingAddStudent.toggle()
+                }
                 
                 // Sort button
                 HStack {
@@ -60,14 +63,15 @@ struct ContentView: View {
                 .padding(.vertical, 8)
                 .background(Color.gray.opacity(0.1))
                 
-                // Student list
+                //Student list
                 List {
                     ForEach(sortedStudents) { student in
-                        StudentRow(student: student) { updatedGrades in
-                            if let index = students.firstIndex(where: { $0.id == student.id }) {
-                                students[index].grades = updatedGrades
-                            }
-                        }
+                        StudentRow(student: student)
+//                        { updatedGrades in
+//                            if let index = students.firstIndex(where: { $0.id == student.id }) {
+//                                students[index].grades = updatedGrades
+//                            }
+//                        }
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -78,15 +82,36 @@ struct ContentView: View {
             }) {
                 Image(systemName: "plus")
             })
+            
             .sheet(isPresented: $showingAddStudent) {
-                AddStudentView(students: $students)
+//                AddStudentView(students: $students)
+                Text("Testing Sheet")
             }
         }
     }
 }
 
-#Preview struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct StudentRow: View {
+    let student:StudentRecord
+    
+    var body: some View {
+        VStack{
+            Text("Name: \(student.name)")
+            Text("AVG: \(student.averageGrade)")
+        }
     }
+}
+
+struct AddStudentView: View {
+    let students:StudentRecord
+    
+    var body: some View {
+        Text("Students")
+    }
+}
+
+
+
+#Preview {
+    Content2View()
 }
